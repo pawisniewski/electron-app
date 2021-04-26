@@ -34,7 +34,7 @@ class App extends React.Component {
       else if (this.state.status === 'rest') {
         this.setState({
           status: 'work',
-          time: 20,
+          time: 1200,
         });
       }  
     }
@@ -43,7 +43,7 @@ class App extends React.Component {
   startTimer = () => {
     this.setState({
       status: 'work',
-      time: 20,
+      time: 1200,
       timer: setInterval(this.step, 1000),
     });
   }
